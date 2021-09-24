@@ -53,6 +53,6 @@ func returnActivity(c echo.Context) error {
 
 func main() {
 	e := echo.New()
-	e.GET("/", returnActivity)
+	e.GET("/activity", returnActivity)
 	e.Logger.Fatal(e.Start(address))
 }
